@@ -10,7 +10,7 @@ export default {
             )}
         )}
     },
-    users: () => {
+    User: () => {
         return new Promise((resolve, reject) => {
             User.find({})
                 .populate()
@@ -45,6 +45,5 @@ export default {
                 })
             })
         }
-    },
-
+    }
 };
